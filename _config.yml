@@ -19,7 +19,7 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 footer-links:
   dribbble:
   email:
-  facebook: https://www.facebook.com/pg/Nao-N%E3%81%AE%E9%96%8B%E7%99%BA%E6%83%85%E5%A0%B1-228586720956331/about/
+  facebook: pg/Nao-N%E3%81%AE%E9%96%8B%E7%99%BA%E6%83%85%E5%A0%B1-228586720956331/about/
   flickr:
   github: naon56
   instagram:
@@ -29,7 +29,7 @@ footer-links:
   twitter: naondevelopment
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: https://plus.google.com/b/108220176706092842160/108220176706092842160
+  googleplus: 108220176706092842160/108220176706092842160
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
