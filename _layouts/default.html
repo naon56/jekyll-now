@@ -67,6 +67,48 @@
       </div>
       <!-- /About -->
       
+      <!-- Archive -->
+      <div class="footer-block">
+        <mt:IfArchiveTypeEnabled archive_type="Monthly">
+          <mt:ArchibeList archive_type="Monthly">
+            <mt:ArchiveListHeader>
+              <div class="widget-archive-monthly widget-archive widget">
+                <h2 class="widget-header><$mt:ArchiveTypeLabel$><a href="<$mt:Link template="archive_indes"$>$>Archive</a></h2>
+                  <div class="widget-content">
+                    <ul>
+            </mt:ArchiveListHeader>
+                      <li><a href="<$mt:ArchiveLink$>"><$mt:ArchiveTitle$>($mt:ArchiveCount$>)</a></li>
+            <mt:ArchiveListFooter>
+                    </ul>
+                  </div>
+                </div>
+            </mt:ArchiveListFooter>
+          </mt:ArchiveList>
+        </mt:IfAchiveTyepEnabled>         
+      </div>
+      <!-- /Archive -->
+      
+      <!-- Category -->
+      <div class="footer-block">
+        <mt:IfArchiveTypeEnabled archive_type="Category-Yearly">
+          <mt:ArchibeList archive_type="Category-Yearly">
+            <mt:ArchiveListHeader>
+              <div class="widget-archive-category-yearly widget-archive widget">
+                <h2 class="widget-header>Category</h2>
+                  <div class="widget-content">
+                    <ul>
+            </mt:ArchiveListHeader>
+                      <li><a href="<$mt:ArchiveLink$>"><$mt:ArchiveTitle$>($mt:ArchiveCount$>)</a></li>
+            <mt:ArchiveListFooter>
+                    </ul>
+                  </div>
+                </div>
+            </mt:ArchiveListFooter>
+          </mt:ArchiveList>
+        </mt:IfAchiveTyepEnabled> 
+      </div>
+      <!-- /Category -->
+      
     </div>
     <!-- /footer -->
       
