@@ -299,8 +299,19 @@ footer {
 	width: 200px;
 	height: auto;
 	border: 1px solid #fff;
-/*	font-size: 12px; */
 	float: left;
+}
+
+.footer-block > ul {
+	padding: 5px;
+	list-style-type: none;
+	margin-bottom:20px;
+}
+
+.footer-block > ul ul {
+	text-align: left;
+	padding: 10px 12px;
+	margin-left: 5px;
 }
 
 .footer-copyright {
@@ -309,7 +320,6 @@ footer {
 	width: 100%;
 	height: auto;
 	font-size: 80%;
-/*	text-color: #fff; */
 	text-align: center;
 	clear: both;
 }
@@ -327,6 +337,18 @@ footer {
 	padding: 20px;
 	width: 150px;
 	float: left;
+}
+
+.header-block > ul {
+	padding: 5px;
+	list-style-type: none;
+	margin-bottom:20px;
+}
+
+.header-block > ul ul {
+	text-align: left;
+	padding: 10px 12px;
+	margin-left: 5px;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
