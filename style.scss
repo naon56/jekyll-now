@@ -18,7 +18,7 @@ html {
 }
 
 body {
-	background: $white;
+  background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
@@ -288,8 +288,8 @@ footer {
 	padding: 50px;
 	width: 100%;
 	height: auto;
-	background-color: #000;
-	text-color: #fff;
+/*	background-color: #000; */
+/*	text-color: #fff; */
 	clear: both;
 }
 
@@ -308,7 +308,7 @@ footer {
 	width: 100%;
 	height: auto;
 	font-size: 50%;
-	text-color: #fff;
+/*	text-color: #fff; */
 	text-aling: center;
 	clear: both;
 }
