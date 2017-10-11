@@ -285,12 +285,22 @@ footer {
 
 .footer-widget {
 	margin: 0;
-	padding: 25px;
-	width: 250px;
+	padding: 50px;
+	width: 100%;
 	height: auto;
 	background-color: $black;
 	text-color: $white;
-	text-align: left;
+	clear: both;
+}
+
+
+.footer-block {
+	margin: 0;
+	padding: 25px;
+	width: 250px;
+	height: auto;
+	border: 1px solid $white;
+	float: left;
 }
 
 .footer-copyright {
@@ -298,9 +308,8 @@ footer {
 	padding: 50px;
 	width: 100%;
 	height: auto;
-	background-color; $black
-	text-color-: $white;
 	text-aling: center;
+	clear: both;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
