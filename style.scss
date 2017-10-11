@@ -293,6 +293,16 @@ footer {
 	text-align: left;
 }
 
+.footer-copyright {
+	margin: 0;
+	paddingn 50px;
+	width: 100%;
+	height: auto;
+	background-color; $black
+	text-color-: $white;
+	text-aling: center;
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
