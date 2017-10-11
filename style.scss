@@ -294,7 +294,7 @@ footer {
 }
 
 .footer-block {
-	margin: 5;
+	margin: 5px;
 	padding: 20px;
 	width: 200px;
 	height: auto;
@@ -312,6 +312,21 @@ footer {
 /*	text-color: #fff; */
 	text-align: center;
 	clear: both;
+}
+
+.headeer-widget {
+	margin: 0px;
+	padding: 50px;
+	width: 100%;
+	height: auto;
+	clear: both;
+}
+
+.header-block {
+	margin: 5px;
+	padding: 20px;
+	width: 150px;
+	float: left;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
