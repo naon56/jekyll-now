@@ -157,12 +157,14 @@
     <!-- copyright -->
     <div class="footer-copyright">
       &copy; 
-      function copyright_year(){
-		    $getlatest = get_posts('numberposts=1&post_type=any & orderby=date');
-		    foreach($getlatest as $post): setup_postdata($post);
- 		    echo the_date('Y');
-		    endforeach;
-	    } 
+      <?php 
+	      function copyright_year(){
+			    $getlatest = get_posts('numberposts=1&post_type=any & orderby=date');
+			    foreach($getlatest as $post): setup_postdata($post);
+			    echo the_date('Y');
+			    endforeach;
+		    } 
+       ?>
       <a href="https://naon56.github.io/" target="_top">Nao N.'s development blog</a>
     </div>
     <!-- /copyright -->
