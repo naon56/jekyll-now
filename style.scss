@@ -283,44 +283,9 @@ footer {
   text-align: center;
 }
 
-/*
-.footer-widget {
-	margin: 0;
-	padding: 50px;
-	width: 100%;
-	height: auto;
-	float: right;
-}
-
-.footer-widget:after {
-	content: "";
-	clear: both;
-	display: block;
-}
-
-.footer-block {
-	margin: 10px;
-	padding: 10px;
-	width: 200px;
-	height: auto;
-	border: 1px solid #fff;
-	float: left;
-}
-
-.footer-block > ul {
-	padding: 5px;
-	list-style-type: none; 
-	margin-left: 10px;
-	margin-bottom:20px;
-}
-
-.footer-block > ul ul {
-	text-align: left;
-	padding: 10px;
-	margin-left: 5px;
-}
-*/
-
+//----------
+// footer widget
+//----------
 #footer1 h2{
 	margin-bottom: 10px;
 	font-family: 'Josefin Sans', sans-serif;
@@ -364,9 +329,9 @@ footer {
 .footer-block-in {
     width: 180px;
     padding: 10px;
-	margin: 10px;
+    margin: 10px;
     float: left; 
-	border: 1px solid #ddd;
+    border: 1px solid #fff;
 }
  
 .footer-block-in > ul {
@@ -402,85 +367,9 @@ footer {
 	clear: both;
 }
 
-/*
-.headeer-widget {
-	margin: 0px;
-	padding: 50px;
-	width: 100%;
-	height: auto;
-	border: 1px solid #000;
-}
-
-.headeer-widget:after {
-	content: "";
-	clear: both;
-}
-
-.header-block {
-	clear: both;
-	border: 1px solid #ddd;
-}
-
-.header-block > ul {
-	float: right;
-}
-*/
-/* clearfix */
-/*
-.header-block: before,
-.header-block: after {
-    content: "";
-    display: table;
-}
-*/
-/*
-.header-block a {
-}
- 
-.header-block:after {
-    clear: both;
-}
- */
-/* For IE 6/7 (trigger hasLayout) */
-/*
-.header-block {
-    zoom: 1;
-}
-
-.header-widget {
-	margin: 0;
-	padding: 50px;
-	width: 100%;
-	height: auto;
-}
-
-.header-widget:after {
-	content: "";
-	clear: both;
-	display: block;
-}
-
-.header-block {
-	margin: 10px;
-	padding: 10px;
-	width: 200px;
-	height: auto;
-	border: 1px solid #fff;
-	float: left;
-}
-
-.header-block > ul {
-	padding: 5px;
-	margin-bottom:20px;
-}
-
-.header-block > ul ul {
-	text-align: left;
-	padding: 10px;
-	margin-left: 5px;
-}
-*/
-
+//----------
+// header widget
+//----------
 #header1 h2{
 	margin-bottom: 10px;
 	font-family: 'Josefin Sans', sans-serif;
@@ -510,10 +399,10 @@ footer {
 	float: left;
 	width: 75px;
 }
-	#foooter-recent-posts h3,
-	#foooter-recent-posts p,
-	#foooter-popular-posts h3,
-	#foooter-popular-posts p{
+	#header-recent-posts h3,
+	#header-recent-posts p,
+	#header-popular-posts h3,
+	#header-popular-posts p{
 		margin: 0;
 	}
 
@@ -524,9 +413,9 @@ footer {
 .header-block-in {
     width: 180px;
     padding: 10px;
-	margin: 10px;
+    margin: 10px;
     float: left; 
-	border: 1px solid #ddd;
+    border: 1px solid #000;
 }
  
 .header-block-in > ul {
@@ -537,7 +426,7 @@ footer {
  
 .header-block-in > ul ul {
     text-align: left;
-	padding: 10px;
+    padding: 10px;
     margin-left: 5px;
 }
  
