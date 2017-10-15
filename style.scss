@@ -342,6 +342,7 @@ footer {
 }
 
 .header-block {
+	clear: both;
 }
 
 .header-block > ul {
@@ -349,11 +350,13 @@ footer {
 }
 
 /* clearfix */
-/* .header-block: before, */
+/*
+.header-block: before,
 .header-block: after {
     content: "";
     display: table;
 }
+*/
 
 .header-block a {
 }
