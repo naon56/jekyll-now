@@ -426,13 +426,13 @@ footer {
 }
 */
 /* clearfix */
-
+/*
 .header-block: before,
 .header-block: after {
     content: "";
     display: table;
 }
-
+*/
 /*
 .header-block a {
 }
@@ -440,8 +440,9 @@ footer {
 .header-block:after {
     clear: both;
 }
- 
+ */
 /* For IE 6/7 (trigger hasLayout) */
+/*
 .header-block {
     zoom: 1;
 }
