@@ -402,6 +402,7 @@ footer {
 	clear: both;
 }
 
+/*
 .headeer-widget {
 	margin: 0px;
 	padding: 50px;
@@ -423,16 +424,16 @@ footer {
 .header-block > ul {
 	float: right;
 }
-
+*/
 /* clearfix */
-/*
+
 .header-block: before,
 .header-block: after {
     content: "";
     display: table;
 }
-*/
 
+/*
 .header-block a {
 }
  
@@ -476,6 +477,78 @@ footer {
 	text-align: left;
 	padding: 10px;
 	margin-left: 5px;
+}
+*/
+
+#header1 h2{
+	margin-bottom: 10px;
+	font-family: 'Josefin Sans', sans-serif;
+}
+.widget{
+	margin-bottom: 60px;
+}
+
+#header1 .widget ul{
+	padding-left: 1.5em;
+	list-style-position: outside;
+	list-style-type: disc;
+}
+
+#header1-recent-posts li,
+#header1-popular-posts li
+{
+	margin:20px 0;
+}
+
+.sidebar-thumbnail-box{
+	float: left;
+	width: 75px;
+}
+
+.sidebar-recent-posts-title{
+	float: left;
+	width: 75px;
+}
+	#foooter-recent-posts h3,
+	#foooter-recent-posts p,
+	#foooter-popular-posts h3,
+	#foooter-popular-posts p{
+		margin: 0;
+	}
+
+.tagcloud a{
+	white-space: nowrap;
+}
+
+.header-block-in {
+    width: 180px;
+    padding: 10px;
+	margin: 10px;
+    float: left; 
+	border: 1px solid #ddd;
+}
+ 
+.header-block-in > ul {
+    padding: 5px;
+    list-style-type: none;
+    margin-bottom:20px;
+}
+ 
+.header-block-in > ul ul {
+    text-align: left;
+	padding: 10px;
+    margin-left: 5px;
+}
+ 
+.header-block{
+	padding-left: 15%;
+	border: 0;
+}
+
+.header-block:after{
+    content: "";
+    clear: both;
+    display: block;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
