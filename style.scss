@@ -288,9 +288,6 @@ footer {
 	padding: 50px;
 	width: 100%;
 	height: auto;
-/*	background-color: #000; */
-/*	text-color: #fff; */
-/*	clear: both; */
 }
 
 .footer-widget:after {
@@ -370,49 +367,37 @@ footer {
     zoom: 1;
 }
 
-.header-block-in {
-    width: auto;
+.header-widget {
+	margin: 0;
+	padding: 50px;
+	width: 100%;
 	height: auto;
-	padding: 5px;
-	margin: 0px;
-    float: right; 
-	display: table-cell;
 }
- 
-.header-block-in > ul {
-	padding: 5px;
-    list-style-type: none;
-    margin-bottom: 5px;
+
+.header-widget:after {
+	content: "";
+	clear: both;
+	display: block;
 }
- 
-.header-block-in > ul ul {
-    text-align: right;
+
+.header-block {
+	margin: 10px;
 	padding: 10px;
-    margin-left: 5px;
-}
-
-.header-widget-area {
-	width: auto;
+	width: 200px;
 	height: auto;
-	padding: 5px;
-	margin: 0px;
+	border: 1px solid #fff;
 	float: left;
-	border: 1px solid #000;
 }
 
-.header-widget-container >ul {
-	float: left;
-	width: auto;
-	height: auto;
-	margin: 0px;
+.header-block > ul {
 	padding: 5px;
-	list-style-type: none;
+	margin-bottom:20px;
 }
 
-.header-widget-container >ul ul {
+.header-block > ul ul {
 	text-align: left;
-	padding: 5px;
-	margin: 0px;
+	padding: 10px;
+	margin-left: 5px;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
