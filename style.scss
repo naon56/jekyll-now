@@ -345,11 +345,11 @@ footer {
 }
 
 .header-block > ul {
-	float: right; /* error? */
+	float: right;
 }
 
 /* clearfix */
-.header-block: before,
+/* .header-block: before, */
 .header-block: after {
     content: "";
     display: table;
