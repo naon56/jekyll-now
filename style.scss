@@ -283,6 +283,7 @@ footer {
   text-align: center;
 }
 
+/*
 .footer-widget {
 	margin: 0;
 	padding: 50px;
@@ -308,7 +309,7 @@ footer {
 
 .footer-block > ul {
 	padding: 5px;
-/*	list-style-type: none; */
+	list-style-type: none; 
 	margin-left: 10px;
 	margin-bottom:20px;
 }
@@ -317,6 +318,78 @@ footer {
 	text-align: left;
 	padding: 10px;
 	margin-left: 5px;
+}
+*/
+
+#footer1 h2{
+	margin-bottom: 10px;
+	font-family: 'Josefin Sans', sans-serif;
+}
+.widget{
+	margin-bottom: 60px;
+}
+
+#footer1 .widget ul{
+	padding-left: 1.5em;
+	list-style-position: outside;
+	list-style-type: disc;
+}
+
+#footer1-recent-posts li,
+#footer1-popular-posts li
+{
+	margin:20px 0;
+}
+
+.sidebar-thumbnail-box{
+	float: left;
+	width: 75px;
+}
+
+.sidebar-recent-posts-title{
+	float: left;
+	width: 75px;
+}
+	#foooter-recent-posts h3,
+	#foooter-recent-posts p,
+	#foooter-popular-posts h3,
+	#foooter-popular-posts p{
+		margin: 0;
+	}
+
+.tagcloud a{
+	white-space: nowrap;
+}
+
+.footer-block-in {
+    width: 180px;
+    padding: 10px;
+	margin: 10px;
+    float: left; 
+	border: 1px solid #ddd;
+}
+ 
+.footer-block-in > ul {
+    padding: 5px;
+    list-style-type: none;
+    margin-bottom:20px;
+}
+ 
+.footer-block-in > ul ul {
+    text-align: left;
+	padding: 10px;
+    margin-left: 5px;
+}
+ 
+.footer-block{
+	padding-left: 15%;
+	border: 0;
+}
+
+.footer-block:after{
+    content: "";
+    clear: both;
+    display: block;
 }
 
 .footer-copyright {
