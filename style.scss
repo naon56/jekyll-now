@@ -306,12 +306,12 @@ footer {
 	margin:20px 0;
 }
 
-.sidebar-thumbnail-box{
+.footer-thumbnail-box{
 	float: left;
 	width: 75px;
 }
 
-.sidebar-recent-posts-title{
+.footer-recent-posts-title{
 	float: left;
 	width: 75px;
 }
@@ -336,18 +336,18 @@ footer {
  
 .footer-block-in > ul {
     padding: 5px;
-    list-style-type: none;
+/*    list-style-type: none; */
     margin-bottom:20px;
 }
  
 .footer-block-in > ul ul {
     text-align: left;
-	padding: 10px;
+    padding: 10px;
     margin-left: 5px;
 }
  
 .footer-block{
-	padding-left: 15%;
+	padding-left: 0;
 	border: 0;
 }
 
@@ -390,12 +390,12 @@ footer {
 	margin:20px 0;
 }
 
-.sidebar-thumbnail-box{
+.header-thumbnail-box{
 	float: left;
 	width: 75px;
 }
 
-.sidebar-recent-posts-title{
+.header-recent-posts-title{
 	float: left;
 	width: 75px;
 }
@@ -414,7 +414,7 @@ footer {
     width: 180px;
     padding: 10px;
     margin: 10px;
-    float: left; 
+    float: right; 
     border: 1px solid #000;
 }
  
