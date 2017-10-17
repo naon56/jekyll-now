@@ -288,6 +288,7 @@ footer {
 //----------
 #footer1 {
 	margin-left: 15%;
+	width: 100%;
 }
 
 #footer1 h2{
@@ -380,23 +381,15 @@ footer {
 }
 
 #header1 {
+	width: 100%;
 }
 
 .header-block {
+	border: 1px solid #ddd;
 }
 
 .header-block > ul {
 	float: right;
-}
-
-/* clearfix */
-.header-block: before {
-    content: "";
-    display: table;	
-}
-.header-block: after {
-    content: "";
-    display: table;
 }
 
 .header-block {
@@ -424,6 +417,7 @@ footer {
 	margin: 0px;
     float: right; 
 	display: table-cell;
+	border: 1px solid #000;
 }
  
 .header-block-in > ul {
