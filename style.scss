@@ -411,7 +411,7 @@ footer {
 }
 
 .header-block-in {
-    width: 200px;
+    width: auto;
 	height: auto;
 	padding: 10px;
 	margin: 0px;
@@ -459,6 +459,7 @@ footer {
 	float: left;
 	padding: 0;
 	margin: 0;
+	width: 200px;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
