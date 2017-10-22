@@ -122,21 +122,21 @@
       <!-- Archive -->
       <div class="footer-block-in">
         <mt:IfArchiveTypeEnabled archive_type="Monthly">
-          <mt:ArchibeList archive_type="Monthly">
-            <mt:ArchiveListHeader>
-              <div class="widget-archive-monthly widget-archive widget">
-                <h4 class="widget-header><$mt:ArchiveTypeLabel$><a href="<$mt:Link template="archive_indes$>">Archive</a></h4>
-                  <div class="widget-content">
-                    <ul>
-            </mt:ArchiveListHeader>
-                      <li><a href="<$mt:ArchiveLink$>"><$mt:ArchiveTitle$> (<$mt:ArchiveCount$>)</a></li>
-            <mt:ArchiveListFooter>
-                    </ul>
-                  </div>
-                </div>
-            </mt:ArchiveListFooter>
-          </mt:ArchiveList>
-        </mt:IfAchiveTyepEnabled>         
+    <mt:ArchiveList archive_type="Monthly">
+        <mt:ArchiveListHeader>
+<nav class="widget-archive-monthly widget">
+  <h3 class="widget-header"><$mt:ArchiveTypeLabel$>アーカイブ</h3>
+  <div class="widget-content">
+    <ol class="widget-list">
+        </mt:ArchiveListHeader>
+      <li class="widget-list-item"><a href="<$mt:ArchiveLink encode_html="1"$>"><$mt:ArchiveTitle$> (<$mt:ArchiveCount$>)</a></li>
+        <mt:ArchiveListFooter>
+    </ol>
+  </div>
+</nav>
+        </mt:ArchiveListFooter>
+    </mt:ArchiveList>
+</mt:IfArchiveTypeEnabled>      
       </div>
       <!-- /Archive -->
       
