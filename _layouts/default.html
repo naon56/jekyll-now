@@ -86,41 +86,43 @@
     <div class="wrapper-footer">
       <div class="container">
         
-    <!-- footer-widget -->
-	      <div id="footer1">
-    <div class="footer-block">
-      <!-- About -->
-      <div class="footer-block-in">
-        <h4>About this site</h4>
-        *Japanese version only. 
-        <br>
-        Nao N.の開発したアプリなどの情報をお知らせします。
-        
-        <h4>About me</h4>
-        Name: ナオ Nao N.
-        <br>
-        趣味でプログラム開発をしています。
-        
-        <h4>Contact me</h2>
-        御用の際は下記メールアドレスまでご連絡ください。なお、メールの記述は日本語でお願いいたします。
-        <br>
-        Please contact me the following e-mail address if you have anything. Please describe the e-mail in Japanese.
-        <br><br>
-        nao.n.may06.official "at mark" gmail.com
-        
-        <h4>Links</h4>
-        <ul>
-          <li><a href="http://naon56-note.blog.jp/" target="_blank">Nao N.の雑記</a></li>
-          <li><a href="https://twitter.com/naondevelopment" target="_blnak">Twitter</a></li>
-          <li><a href="https://www.facebook.com/pg/Nao-N%E3%81%AE%E9%96%8B%E7%99%BA%E6%83%85%E5%A0%B1-228586720956331/about/" target="_blank">Facebook</a></li>
-          <li><a href="https://plus.google.com/b/108220176706092842160/108220176706092842160" target="_blank">Google+</a></li>
-          <li><a href="http://naonmay06.s1002.xrea.com/p/links" target="_blank">Nao N's Links</a></li>
-        </ul>
-      </div>
-      <!-- /About -->
+        <!-- footer-widget -->
+        <div id="footer1">
+          <div class="footer-block">
+	
+		<!-- About -->
+		<div class="footer-block-in">
+		<h4>About this site</h4>
+		*Japanese version only. 
+		<br>
+		Nao N.の開発したアプリなどの情報をお知らせします。
+
+		<h4>About me</h4>
+		Name: ナオ Nao N.
+		<br>
+		趣味でプログラム開発をしています。
+
+		<h4>Contact me</h2>
+		御用の際は下記メールアドレスまでご連絡ください。なお、メールの記述は日本語でお願いいたします。
+		<br>
+		Please contact me the following e-mail address if you have anything. Please describe the e-mail in Japanese.
+		<br><br>
+		nao.n.may06.official "at mark" gmail.com
+
+		<h4>Links</h4>
+		<ul>
+		  <li><a href="http://naon56-note.blog.jp/" target="_blank">Nao N.の雑記</a></li>
+		  <li><a href="https://twitter.com/naondevelopment" target="_blnak">Twitter</a></li>
+		  <li><a href="https://www.facebook.com/pg/Nao-N%E3%81%AE%E9%96%8B%E7%99%BA%E6%83%85%E5%A0%B1-228586720956331/about/" target="_blank">Facebook</a></li>
+		  <li><a href="https://plus.google.com/b/108220176706092842160/108220176706092842160" target="_blank">Google+</a></li>
+		  <li><a href="http://naonmay06.s1002.xrea.com/p/links" target="_blank">Nao N's Links</a></li>
+		</ul>
+	      </div>
+	      <!-- /About -->
       
       <!-- Archive -->
       <div class="footer-block-in">
+	      
         <mt:IfArchiveTypeEnabled archive_type="Monthly">
     <mt:ArchiveList archive_type="Monthly">
         <mt:ArchiveListHeader>
@@ -136,60 +138,53 @@
 </nav>
         </mt:ArchiveListFooter>
     </mt:ArchiveList>
-</mt:IfArchiveTypeEnabled>      
+</mt:IfArchiveTypeEnabled>
+	    
       </div>
       <!-- /Archive -->
       
       <!-- Category -->
       <div class="footer-block-in">
 	      
-	      <mt:IfArchiveTypeEnabled archive_type="Monthly">
-    <mt:ArchiveList archive_type="Monthly">
-        <mt:ArchiveListHeader>
-<nav class="widget-archive-monthly widget">
-  <h3 class="widget-header"><$mt:ArchiveTypeLabel$>アーカイブ</h3>
-  <div class="widget-content">
-    <ol class="widget-list">
-        </mt:ArchiveListHeader>
-      <li class="widget-list-item"><a href="<$mt:ArchiveLink encode_html="1"$>"><$mt:ArchiveTitle$> (<$mt:ArchiveCount$>)</a></li>
-        <mt:ArchiveListFooter>
-    </ol>
-  </div>
-</nav>
-        </mt:ArchiveListFooter>
-    </mt:ArchiveList>
+<mt:IfArchiveTypeEnabled archive_type="Category">
+<mt:if tag="BlogCategoryCount">
+<div class="widget-archive widget-archive-category widget">
+    <h3 class="widget-header">カテゴリ</h3>
+    <div class="widget-content">
+    <mt:TopLevelCategories>
+        <mt:SubCatIsFirst>
+        <ul>
+        </mt:SubCatIsFirst>
+        <mt:If tag="CategoryCount">
+            <li><a href="<$mt:CategoryArchiveLink$>"<mt:If tag="CategoryDescription"> title="<$mt:CategoryDescription remove_html="1" encode_html="1"$>"</mt:If>><$mt:CategoryLabel$> (<$mt:CategoryCount$>)</a>
+        <mt:Else>
+            <li><$mt:CategoryLabel$>
+        </mt:If>
+        <$mt:SubCatsRecurse$>
+            </li>
+        <mt:SubCatIsLast>
+        </ul>
+        </mt:SubCatIsLast>
+    </mt:TopLevelCategories>
+    </div>
+</div>
+</mt:if>
 </mt:IfArchiveTypeEnabled>
-	      
-        <mt:IfArchiveTypeEnabled archive_type="Category-Yearly">
-          <mt:ArchibeList archive_type="Category-Yearly">
-            <mt:ArchiveListHeader>
-              <div class="widget-archive-category-yearly widget-archive widget">
-                <h4 class="widget-header">Category</h4>
-                  <div class="widget-content">
-                    <ul>
-            </mt:ArchiveListHeader>
-                      <li><a href="<$mt:ArchiveLink$>"><$mt:ArchiveTitle$> (<$mt:ArchiveCount$>)</a></li>
-            <mt:ArchiveListFooter>
-                    </ul>
-                  </div>
-                </div>
-            </mt:ArchiveListFooter>
-          </mt:ArchiveList>
-        </mt:IfAchiveTyepEnabled> 
+	
       </div>
       <!-- /Category -->
       
-    </div>
-	      </div>
-    <!-- /footer-widget -->
+          </div>
+        </div>
+        <!-- /footer-widget -->
       
-    <!-- copyright -->
-    <div class="footer-copyright">
-      &copy; 
-      2017 
-      <a href="https://naon56.github.io/" target="_top">Nao N.'s development blog</a>
-    </div>
-    <!-- /copyright -->
+        <!-- copyright -->
+        <div class="footer-copyright">
+          &copy; 
+          2017 
+          <a href="https://naon56.github.io/" target="_top">Nao N.'s development blog</a>
+        </div>
+        <!-- /copyright -->
         
         <footer class="footer">
           {% include svg-icons.html %}
