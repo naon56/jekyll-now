@@ -28,7 +28,8 @@
 
           <nav>
             <a href="{{ site.baseurl }}/">Blog</a>
-            <!-- <a href="{{ site.baseurl }}/about">About</a> -->
+            <a href="{{ site.baseurl }}/about">About</a>
+		  <a href="{{ site.baseurl }}/archive">Archive</a>
           </nav>
           
    	<!-- header-widget -->
@@ -85,136 +86,32 @@
     <div class="wrapper-footer">
       <div class="container">
         
-        <!-- footer-widget -->
-        <div id="footer1">
-          <div class="footer-block">
-	
-		<!-- About -->
-		<div class="footer-block-in">
-		<h4>About this site</h4>
-		*Japanese version only. 
-		<br>
-		Nao N.の開発したアプリなどの情報をお知らせします。
-
-		<h4>About me</h4>
-		Name: <b>ナオ Nao N.</b>
-		<br>
-		<br>
-		趣味でプログラム開発をしています。でもプログラミングは得意ではありません。自分の欲しいプログラムを何とか書いています。
-
-		<h4>Contact me</h2>
-		御用の際は下記メールアドレスまでご連絡ください。なお、メールの記述は日本語でお願いいたします。
-		<br>
-		Please contact me the following e-mail address if you have anything. Please describe the e-mail in Japanese.
-		<br>
-		<br>
-		nao.n.may06.official "at mark" gmail.com
-
-		<h4>Links</h4>
-		<ul>
-		  <li><a href="http://naon56-note.blog.jp/" target="_blank">Nao N.の雑記</a></li>
-		  <li><a href="http://naonmay06.s1002.xrea.com/p/links" target="_blank">Nao N's Links</a></li>
-		</ul>
-	      </div>
-	      <!-- /About -->
-      
-      <!-- Archive -->
-      <div class="footer-block-in">
-        <h4>Monthly Archive</h4>
-	      
-{% assign yearmonths_dupli = "" | split: "" %}
-{% for post in site.posts %}
-    {% assign ym = post.date | date: '%Y-%m' %}
-    {% assign yearmonths_dupli = yearmonths_dupli | push: ym %}
-{% endfor %}
-{% assign yearmonths_dupli = yearmonths_dupli | sort | reverse %}
-
-{% assign yearmonths = "" | split: "|" %}
-{% assign count = 0 %}
-{% assign prev = yearmonths_dupli | first %}
-{% for ym in yearmonths_dupli %}
-    {% if prev == ym %}
-        {% assign count = count | plus: 1 %}
-    {% else %}
-        {% assign item = "" | split: "" | push: prev | push: count %}
-        {% assign yearmonths = yearmonths | push: item %}
-        {% assign count = 1 %}
-    {% endif %}
-    {% assign prev = ym %}
-{% endfor %}
-{% assign item = "" | split: "" | push: ym | push: count %}
-{% assign yearmonths = yearmonths | push: item %}
-	    
-      </div>
-      <!-- /Archive -->
-      
-      <!-- Category -->
-      <div class="footer-block-in">
-        <h4>Category Archive</h4>
-        
-{% assign separator = "{3aacbed8-6af0-42f4-8338-6bcfa91cd2d7}" %}
-{% assign taglist_alpha_reversed = "" | split: "" %}
-{% for t in site.tags %}
-    {% capture item %}{{ t[0] }}{{ separator }}{{ t[1].size }}{% endcapture %}
-    {% assign taglist_alpha_reversed = taglist_alpha_reversed | push: item %}
-{% endfor %}
-{% assign taglist_alpha_reversed = taglist_alpha_reversed | sort | reverse %}
-
-{% assign taglist_prepend_count = "" | split: "" %}
-{% assign index = 0 %}
-{% for t in taglist_alpha_reversed %}
-    {% assign _t = t | split: separator %}
-
-    {% comment %} 0詰め {% endcomment %}
-    {% assign padded_count = _t[1] | prepend: "00000" | slice: -5, 5 %}
-    {% assign padded_index = index | prepend: "00000" | slice: -5, 5  %}
-
-    {% assign item = padded_count
-        | append: separator | append: padded_index
-        | append: separator | append: _t[0]
-    %}
-
-    {% assign taglist_prepend_count = taglist_prepend_count | push: item %}
-
-    {% assign index = index | plus: 1 %}
-{% endfor %}
-{% assign taglist_prepend_count = taglist_prepend_count | sort | reverse %}
-
-{% assign taglist = "" | split: "" %}
-{% for t in taglist_prepend_count %}
-    {% assign _t = t | split: separator %}
-
-    {% comment %} 0詰め文字列を数値に戻す {% endcomment %}
-    {% assign count = _t[0] | plus: 0 %}
-
-    {% assign item = "" | split: "" | push: _t[2] | push: count %}
-    {% assign taglist = taglist | push: item %}
-{% endfor %}
-
-<ul>
-{% for tag in taglist %}
-    <li><a href="archive-by-tag.html#__tag__{{ tag[0] | uri_escape }}">{{ tag[0] }} ({{ tag[1] }})</a></li>
-{% endfor %}
-</ul>
-	      
-      </div>
-      <!-- /Category -->
-      
-          </div>
-        </div>
-        <!-- /footer-widget -->
-      
-        <!-- copyright -->
-        <div class="footer-copyright">
-          &copy; 
-          2017 
-          <a href="{{ site.baseurl }}/" target="_top">Nao N.'s development blog</a>
-        </div>
-        <!-- /copyright -->
-        
         <footer class="footer">
           {% include svg-icons.html %}
+
+	  <!-- Links -->
+          <div id="footer1">
+            <div class="footer-block">
+	      <div class="footer-block-in">
+		    <a href="http://naon56-note.blog.jp/" target="_blank">Nao N.の雑記</a>
+	      </div>
+              <div class="footer-block-in">
+		    <a href="http://naonmay06.s1002.xrea.com/p/links" target="_blank">Nao N's Links</a>
+	      </div>
+            </div>
+          </div>
+          <!-- /Links -->
+	      
+	  <!-- copyright -->
+          <div class="footer-copyright">
+            &copy; 
+            2017 
+            <a href="{{ site.baseurl }}/" target="_top">Nao N.'s development blog</a>
+          </div>
+          <!-- /copyright -->
+		
         </footer>
+	      
       </div>
     </div>
 
