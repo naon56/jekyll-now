@@ -4,12 +4,16 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+#### About this site
+*Japanese version only.  
+Nao N.の開発したアプリなどの情報をお知らせします。  
 
-### More Information
+#### About me
+Name: ナオ Nao N.  
+趣味でプログラム開発をしています。でもプログラミングは得意ではありません。自分の欲しいプログラムを何とか書いています。  
 
-A place to include any other types of information that you'd like to include about yourself.
+#### Contact me
+御用の際は下記メールアドレスまでご連絡ください。なお、メールの記述は日本語でお願いいたします。  
+Please contact me the following e-mail address if you have anything. Please describe the e-mail in Japanese.  
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+nao.n.may06.official "at mark" gmail.com
