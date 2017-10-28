@@ -128,13 +128,13 @@
     <mt:ArchiveList archive_type="Monthly">
         <mt:ArchiveListHeader>
 <nav class="widget-archive-monthly widget">
-  <h4 class="widget-header"><$mt:ArchiveTypeLabel$>アーカイブ</h4>
+  <h3 class="widget-header"><$mt:ArchiveTypeLabel$>アーカイブ</h3>
   <div class="widget-content">
-    <ul class="widget-list">
+    <ol class="widget-list">
         </mt:ArchiveListHeader>
       <li class="widget-list-item"><a href="<$mt:ArchiveLink encode_html="1"$>"><$mt:ArchiveTitle$> (<$mt:ArchiveCount$>)</a></li>
         <mt:ArchiveListFooter>
-    </ul>
+    </ol>
   </div>
 </nav>
         </mt:ArchiveListFooter>
@@ -147,30 +147,22 @@
       <!-- Category -->
       <div class="footer-block-in">
 	      
-<mt:IfArchiveTypeEnabled archive_type="Category">
-<mt:if tag="BlogCategoryCount">
-<div class="widget-archive widget-archive-category widget">
-    <h4 class="widget-header">カテゴリ</h4>
-    <div class="widget-content">
-    <mt:TopLevelCategories>
-        <mt:SubCatIsFirst>
-        <ul>
-        </mt:SubCatIsFirst>
-        <mt:If tag="CategoryCount">
-            <li><a href="<$mt:CategoryArchiveLink$>"<mt:If tag="CategoryDescription"> title="<$mt:CategoryDescription remove_html="1" encode_html="1"$>"</mt:If>><$mt:ArchiveCategory$> (<$mt:CategoryCount$>)</a>
-        <mt:Else>
-            <li><$mt:CategoryLabel$>
-        </mt:If>
-        <$mt:SubCatsRecurse$>
-            </li>
-        <mt:SubCatIsLast>
-        </ul>
-        </mt:SubCatIsLast>
-    </mt:TopLevelCategories>
-    </div>
-</div>
-</mt:if>
-</mt:IfArchiveTypeEnabled>
+<mt:TopLevelCategories>
+  <mt:SubCatIsFirst>
+<ul class="widget-list">
+  </mt:SubCatIsFirst>
+  <mt:If tag="ArchiveCount">
+  <li class="widget-list-item">
+    <a href="<$mt:CategoryArchiveLink$>"<mt:If tag="CategoryDescription"> title="<$mt:CategoryDescription remove_html="1" encode_html="1"$>"</mt:If>><$mt:CategoryLabel$> (<$mt:ArchiveCount singular="1 件" plural="# 件" none="記事なし">)</a>
+  <mt:Else>
+  <li class="widget-list-item"><$mt:CategoryLabel$>
+  </mt:If>
+  <$mt:SubCatsRecurse$>
+  </li>
+  <mt:SubCatIsLast>
+</ul>
+  </mt:SubCatIsLast>
+</mt:TopLevelCategories>
 	
       </div>
       <!-- /Category -->
