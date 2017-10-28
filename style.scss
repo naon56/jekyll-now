@@ -332,18 +332,18 @@ footer {
 }
 
 .footer-block-in {
-    width: 200px;
-    padding: 10px;
-    margin: 10px;
+    width: auto;
+    padding: 0px;
+    margin: 0px;
     float: left; 
-    border: 1px solid #fff;
+//    border: 1px solid #fff;
 }
  
 .footer-block-in > ul {
     padding: 5px;
-//    list-style-type: none;
+    list-style-type: none;
     padding-left: 20px;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
  
 .footer-block-in > ul ul {
@@ -364,8 +364,8 @@ footer {
 }
 
 .footer-copyright {
-	margin: 0;
-	padding: 50px;
+	margin: 5px;
+	padding: 5px;
 	width: 100%;
 	height: auto;
 	font-size: 80%;
