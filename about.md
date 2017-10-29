@@ -12,7 +12,7 @@ Nao N.の開発したアプリなどの情報をお知らせします。
 #### About me
 Name: ナオ Nao N.  
 
-*Japanese version only.
+*Japanese version only.  
 趣味でプログラム開発をしています。でもプログラミングは得意ではありません。自分の欲しいプログラムを何とか書いています。  
 
 
