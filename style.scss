@@ -287,9 +287,10 @@ footer {
   text-align: center;
 }
 
-//----------
+//---------------
 // footer widget
-//----------
+//---------------
+
 #footer1 {
 	margin-left: 0;
 	width: 100%;
@@ -379,9 +380,10 @@ footer {
 	clear: both;
 }
 
-//----------
+//---------------
 // header widget
-//----------
+//---------------
+
 .alignright {
 	float: right;
 }
@@ -467,6 +469,27 @@ footer {
 	padding: 0;
 	margin: 0;
 	width: 300px;
+}
+
+//------------------
+// development link
+//------------------
+
+.developmentlinkwrapper {
+	margin: 0;
+	padding: 0;
+	height: auto;
+	width: 100%;
+	background: #aaa;
+}
+
+.developmentlink {
+	margin: 0;
+	padding: 10px;
+	max-width: 740px;
+	height: auto;
+	width: 100%;
+	color: #000;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
