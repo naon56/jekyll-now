@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Twitter@iOS
+title: Twitter(iOS)
 permalink: /twitter-ios/
 ---
 
