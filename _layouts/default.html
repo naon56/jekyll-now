@@ -23,61 +23,63 @@
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+		<div>
+	          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
+	          <div class="site-info">
+	            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+	            <p class="site-description">{{ site.description }}</p>
+	          </div>
 
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-	    <a href="{{ site.baseurl }}/archive">Archive</a>
-          </nav>
+	          <nav>
+	            <a href="{{ site.baseurl }}/">Blog</a>
+	            <a href="{{ site.baseurl }}/about">About</a>
+		    <a href="{{ site.baseurl }}/archive">Archive</a>
+	          </nav>
+		</div>
           
-   	<!-- header-widget -->
-	<div class="alignright">
-		<div =id="header1">
-			<div class="header-block">
-				<div class="header-block-in">
-					<!-- search -->					
-					<div class="header-search-box">
-						
-						<script>
-						  (function() {
-						    var cx = '006534558240853264484:bwsbusxzc2u';
-						    var gcse = document.createElement('script');
-						    gcse.type = 'text/javascript';
-						    gcse.async = true;
-						    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-						    var s = document.getElementsByTagName('script')[0];
-						    s.parentNode.insertBefore(gcse, s);
-						  })();
+	   	<!-- header-widget -->
+		<div class="alignright">
+			<div =id="header1">
+				<div class="header-block">
+					<div class="header-block-in">
+						<!-- search -->					
+						<div class="header-search-box">
+							
+							<script>
+							  (function() {
+							    var cx = '006534558240853264484:bwsbusxzc2u';
+							    var gcse = document.createElement('script');
+							    gcse.type = 'text/javascript';
+							    gcse.async = true;
+							    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+							    var s = document.getElementsByTagName('script')[0];
+							    s.parentNode.insertBefore(gcse, s);
+							  })();
+							</script>
+							<gcse:search></gcse:search>
+
+						</div>
+						<!-- /search -->
+					</div>				
+	     				
+					<div class="header-block-in"> 
+						<!-- translation -->
+
+						<div id="google_translate_element"></div>
+						<script type="text/javascript">
+							function googleTranslateElementInit() {
+								  new google.translate.TranslateElement({pageLanguage: 'ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true}, 'google_translate_element');
+							}
 						</script>
-						<gcse:search></gcse:search>
+						<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>        
 
+						<!-- /translation --> 
 					</div>
-					<!-- /search -->
-				</div>				
-     				
-				<div class="header-block-in"> 
-					<!-- translation -->
-
-					<div id="google_translate_element"></div>
-					<script type="text/javascript">
-						function googleTranslateElementInit() {
-							  new google.translate.TranslateElement({pageLanguage: 'ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true}, 'google_translate_element');
-						}
-					</script>
-					<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>        
-
-					<!-- /translation --> 
 				</div>
 			</div>
 		</div>
-	</div>
-   	<!-- header-widget -->
+	   	<!-- header-widget -->
 
         </header>
       </div>
