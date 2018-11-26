@@ -307,6 +307,13 @@ footer {
 	width: 100%;
 }
 
+.header-area ul,
+.header-area ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
 .header-block {
 }
 
@@ -314,10 +321,11 @@ footer {
 	float: left;
 }
 
-.header-block {
-	margin: 10px;
-	padiing: 10px;
-	width: 95%;
+/* clearfix */
+.header-block: before,
+.header-block: after {
+	content: "";
+	display: table;
 }
 
 .header-block a {
@@ -330,6 +338,13 @@ footer {
 /* For IE 6/7 (trigger hasLayout) */
 .header-block {
     zoom: 1;
+}
+
+.header-area .header-block-in ul,
+.header-area .header-block-in ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 .header-block-in {
