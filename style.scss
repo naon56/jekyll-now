@@ -151,7 +151,8 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+	margin-bottom: 50px;
+	border-bottom: 1px solid $lightGray;
 }
 
 .masthead {
@@ -287,8 +288,6 @@ footer {
 //---------------
 
 .title-area {
-	background-color: $lightGray;
-	border-bottom: 1px solid $lightGray;
 }
 
 //---------------
