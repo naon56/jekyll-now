@@ -152,12 +152,10 @@ img {
 
 .wrapper-masthead {
   margin-bottom: 50px;
-  background-color: $lightGray;
 }
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
 
   @include mobile {
     text-align: center;
@@ -238,9 +236,9 @@ nav {
   }
 }
 
-//
+//---------------
 // .main
-//
+//---------------
 
 .posts > .post {
   padding-bottom: 2em;
@@ -282,6 +280,15 @@ nav {
 footer {
   padding: 20px 0;
   text-align: center;
+}
+
+//---------------
+// title area
+//---------------
+
+.title-area {
+	background-color: $lightGray;
+	border-bottom: 1px solid $lightGray;
 }
 
 //---------------
