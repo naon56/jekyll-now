@@ -466,25 +466,6 @@ footer {
 	width: 300px;
 }
 
-//------------------
-// development link
-//------------------
-
-.developmentlinkwrapper {
-	position: fixed;
-	margin: 0;
-	padding: 10px;
-	top: 100px;
-	right: 10px;
-	color: #fff;
-	background: #aaa;
-	text-align: right;
-	font-size: 100%;
-	cursor:pointer;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-}
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
