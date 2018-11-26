@@ -322,7 +322,10 @@ footer {
 }
 
 /* clearfix */
-.header-block: before,
+.header-block: before {
+	content: "";
+	display: table;
+}
 .header-block: after {
 	content: "";
 	display: table;
