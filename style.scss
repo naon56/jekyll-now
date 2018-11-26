@@ -324,13 +324,7 @@ footer {
 
 .header-block a {
 }
- 
-.header-block: after {
-	content: "";
-	display: table;
-	clear: both;
-}
- 
+
 /* For IE 6/7 (trigger hasLayout) */
 .header-block {
     zoom: 1;
