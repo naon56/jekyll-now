@@ -236,6 +236,16 @@ nav {
   }
 }
 
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+
 //---------------
 // .main
 //---------------
@@ -279,6 +289,7 @@ footer {
   text-align: center;
 }
 
+
 //---------------
 // title area
 //---------------
@@ -287,38 +298,10 @@ footer {
 	margin-bottom: 50px;
 }
 
-//---------------
-// footer area
-//---------------
-
-.footer-area {
-	margin-left: 0;
-	width: 100%;
-	width: 100%;
-	padding: 5px;
-	margin: 5px;
-	float: left;
-	font-size: 80%;
-	text-align: center;
-}
-
-.footer-copyright {
-	margin: 5px;
-	padding: 5px;
-	width: 100%;
-	height: auto;
-	font-size: 80%;
-	text-align: center;
-	clear: both;
-}
 
 //---------------
 // header widget
 //---------------
-
-.alignleft {
-	float: left;
-}
 
 .header-area {
 	width: 100%;
@@ -375,6 +358,32 @@ footer {
 	padding: 0;
 	margin: 0;
 	width: 300px;
+}
+
+
+//---------------
+// footer area
+//---------------
+
+.footer-area {
+	margin-left: 0;
+	width: 100%;
+	width: 100%;
+	padding: 5px;
+	margin: 5px;
+	float: left;
+	font-size: 80%;
+	text-align: center;
+}
+
+.footer-copyright {
+	margin: 5px;
+	padding: 5px;
+	width: 100%;
+	height: auto;
+	font-size: 80%;
+	text-align: center;
+	clear: both;
 }
 
 
